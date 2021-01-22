@@ -116,7 +116,6 @@
  	; return: list containing the state that results from that move.
  )
 
-
 ; SUCC-FN returns all of the possible legal successor states to the current
 ; state. It takes a single argument (s), which encodes the current state, and
 ; returns a list of each state that can be reached by applying legal operators
@@ -180,3 +179,4 @@
 		)
 	)
 )
+    

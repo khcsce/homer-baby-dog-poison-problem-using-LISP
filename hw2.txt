@@ -21,3 +21,20 @@ T
 [7]> (BFS '((A ((C ((E) D)) B))))
 (A B C D E)
 [8]>
+
+;; Extra
+
+Question 2
+[8]> (DFS '(NIL NIL NIL NIL) NIL)
+((NIL NIL NIL NIL) (T T NIL NIL) (NIL T NIL NIL) (T T T NIL) (NIL NIL T NIL)
+ (T NIL T T) (NIL NIL T T) (T T T T))
+[9]> (DFS '(T T T T) NIL)
+((T T T T))
+[10]> (DFS '(T NIL NIL T) NIL)
+((T NIL NIL T) (NIL NIL NIL T) (T T NIL T) (NIL T NIL NIL) (T T T NIL)
+ (NIL NIL T NIL) (T NIL T T) (NIL NIL T T) (T T T T))
+[11]> (DFS '(T T NIL T) NIL)
+((T T NIL T) (NIL NIL NIL T) (T NIL T T) (NIL NIL T T) (T T T T))
+[12]> (DFS '(NIL T NIL T) NIL)
+((NIL T NIL T) (T T NIL T) (NIL NIL NIL T) (T NIL T T) (NIL NIL T T) (T T T T))
+[13]>
