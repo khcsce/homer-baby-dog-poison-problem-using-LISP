@@ -180,3 +180,41 @@
 	)
 )
     
+#|
+Question 1
+
+[1]> (load "hw2.lsp")
+;; Loading file hw2.lsp ...
+;; Loaded file hw2.lsp
+T
+[2]> (BFS '(ROOT))
+(ROOT)
+[3]> (BFS '((((L E) F) T)))
+(T F L E)
+[4]> (BFS '((R (I (G (H T))))))
+(R I G H T)
+[5]> (BFS '(((A (B)) C (D))))
+(C A D B)
+[6]> (BFS '((T (H R E) E)))
+(T E H R E)
+[7]> (BFS '((A ((C ((E) D)) B))))
+(A B C D E)
+[8]>
+
+;; Extra
+
+Question 2
+[8]> (DFS '(NIL NIL NIL NIL) NIL)
+((NIL NIL NIL NIL) (T T NIL NIL) (NIL T NIL NIL) (T T T NIL) (NIL NIL T NIL)
+ (T NIL T T) (NIL NIL T T) (T T T T))
+[9]> (DFS '(T T T T) NIL)
+((T T T T))
+[10]> (DFS '(T NIL NIL T) NIL)
+((T NIL NIL T) (NIL NIL NIL T) (T T NIL T) (NIL T NIL NIL) (T T T NIL)
+ (NIL NIL T NIL) (T NIL T T) (NIL NIL T T) (T T T T))
+[11]> (DFS '(T T NIL T) NIL)
+((T T NIL T) (NIL NIL NIL T) (T NIL T T) (NIL NIL T T) (T T T T))
+[12]> (DFS '(NIL T NIL T) NIL)
+((NIL T NIL T) (T T NIL T) (NIL NIL NIL T) (T NIL T T) (NIL NIL T T) (T T T T))
+[13]>
+|#
